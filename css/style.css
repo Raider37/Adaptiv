@@ -128,24 +128,69 @@ header .container .header__content .content__info .content__wrapper .content__mo
   .container {
     width: 540px;
   }
-  .header__nav .header__menu {
-    margin-right: auto;
-  }
-  .header__nav .header__menu {
-    margin: 0 auto;
-  }
-  .header__nav .header__menu .page {
-    margin: 0 auto;
-  }
-  .header__nav .header__menu:last-child {
+  header .container .header__nav .logo {
     margin-right: 0;
   }
-  .header__nav .logo {
-    margin-left: auto;
-    margin-right: 0;
-  }
-  .header__nav .buy {
+  header .container .header__nav .header__menu {
     display: none;
+  }
+  header .container .header__nav .buy {
+    display: none;
+  }
+  main {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  main .burger {
+    width: 60px;
+    height: 60px;
+    display: block;
+    margin: auto;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+  }
+  .burger > span {
+    display: block;
+    position: relative;
+    width: 45px;
+    height: 5px;
+    margin: 10px auto;
+    background-color: black;
+    border-radius: 10px;
+  }
+  .burger > span#sp1 {
+    -webkit-transition: all .3s .5s;
+    transition: all .3s .5s;
+  }
+  .burger > span#sp2 {
+    -webkit-transition: all .3s .3s;
+    transition: all .3s .3s;
+  }
+  .burger > span#sp3 {
+    -webkit-transition: all .3s .1s;
+    transition: all .3s .1s;
+  }
+  .burger.active > span#sp1 {
+    width: 50px;
+    height: 50px;
+    margin: 10px auto;
+    -webkit-transition: all .3s .1s;
+    transition: all .3s .1s;
+  }
+  .burger.active > span#sp2 {
+    background-color: white;
+    -webkit-transform: translateY(-38px) rotateZ(45deg);
+            transform: translateY(-38px) rotateZ(45deg);
+    -webkit-transition: all .3s .3s;
+    transition: all .3s .3s;
+  }
+  .burger.active > span#sp3 {
+    background-color: white;
+    -webkit-transform: translateY(-53px) rotateZ(-45deg);
+            transform: translateY(-53px) rotateZ(-45deg);
+    -webkit-transition: all .3s .5s;
+    transition: all .3s .5s;
   }
 }
 
@@ -153,19 +198,6 @@ header .container .header__content .content__info .content__wrapper .content__mo
   .container {
     width: 100%;
     padding: 0 15px;
-  }
-  .container .header__nav .header__menu {
-    margin: 0 auto;
-  }
-  .container .header__nav .header__menu .page {
-    margin-right: 0;
-  }
-  .container .header__nav .logo {
-    margin-left: auto;
-    margin-right: 0;
-  }
-  .container .header__nav .buy {
-    display: none;
   }
   .header__content .content__info .content__title {
     text-align: center;

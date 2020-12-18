@@ -185,13 +185,36 @@ header{
 }
 
 @media screen and (max-width: 575px) {
+
+    body {
+        overflow: auto;
+        overflow-x: hidden;
+    }
+
 	.container {
-		width: 100%;
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    header .container .header__content .content__info {
+        text-align: justify;
+    }
+
+    header .container .header__content .content__info .content__wrapper {
+        padding-top: 34px;
+        width: 100%;
     }
 
     header .container .header__content .content__info .content__wrapper .content__desc {
-        
+        margin-right: 0;
+        width: 100%;
     }
+
+    header .container .header__content .content__info .content__wrapper .content__more {
+        margin-top: 15px;
+        width: 100%;
+    }
+
     .header__nav{
         .logo{
             margin-right: 7.5px;

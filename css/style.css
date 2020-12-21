@@ -200,12 +200,8 @@ header .container .header__content .content__info .content__wrapper .content__mo
 }
 
 @media screen and (max-width: 575px) {
-  body {
-    overflow: auto;
-    overflow-x: hidden;
-  }
-  .container {
-    width: 100%;
+  header .container {
+    max-width: 100%;
     padding: 0 15px;
   }
   header .container .header__content .content__info {
@@ -222,6 +218,16 @@ header .container .header__content .content__info .content__wrapper .content__mo
   header .container .header__content .content__info .content__wrapper .content__more {
     margin-top: 15px;
     width: 100%;
+  }
+  header .container .header__nav .show {
+    display: block;
+    position: absolute;
+    top: 100px;
+    left: 22.5px;
+  }
+  header .container .header__nav .show .page {
+    padding-top: 15px;
+    font-size: 30px;
   }
   .header__nav .logo {
     margin-right: 7.5px;

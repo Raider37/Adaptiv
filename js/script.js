@@ -12,3 +12,11 @@ function toggleBurger() {
 }
 
 
+
+document.getElementById('main').onclick = function(){activeClass()}
+
+function activeClass() {
+
+ document.getElementById('headerMenu').classList.toggle('show');
+}
+

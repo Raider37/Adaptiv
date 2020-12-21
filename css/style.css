@@ -7,20 +7,17 @@
 }
 
 body {
+  max-width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-header {
-  padding-top: 12px;
-}
-
-header .container {
+.container {
   max-width: 1170px;
   margin: 0 auto;
 }
 
-header .container .header__nav {
+.container .header__nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29,18 +26,18 @@ header .container .header__nav {
           align-items: center;
 }
 
-header .container .header__nav .header__menu {
+.container .header__nav .header__menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-header .container .header__nav .header__menu .page {
+.container .header__nav .header__menu .page {
   margin-right: 60px;
   list-style-type: none;
 }
 
-header .container .header__nav .logo {
+.container .header__nav .logo {
   margin: 0 auto;
   text-decoration: none;
   font-weight: 900;
@@ -49,7 +46,7 @@ header .container .header__nav .logo {
   color: #37447E;
 }
 
-header .container .header__nav .buy {
+.container .header__nav .buy {
   margin-left: auto;
   border: 0;
   height: 26px;
@@ -59,17 +56,17 @@ header .container .header__nav .buy {
   color: white;
 }
 
-header .container .header__content {
+.container .header__content {
   padding-top: 200px;
   padding-bottom: 379px;
 }
 
-header .container .header__content .content__info {
+.container .header__content .content__info {
   height: 421px;
   max-width: 539.37353515625px;
 }
 
-header .container .header__content .content__info .content__title {
+.container .header__content .content__info .content__title {
   max-width: 539px;
   font-weight: 500;
   font-size: 50px;
@@ -78,7 +75,7 @@ header .container .header__content .content__info .content__title {
   color: #091133;
 }
 
-header .container .header__content .content__info .content__text {
+.container .header__content .content__info .content__text {
   max-width: 539px;
   max-height: 164px;
   font-weight: normal;
@@ -87,11 +84,11 @@ header .container .header__content .content__info .content__text {
   color: #505F98;
 }
 
-header .container .header__content .content__info .content__wrapper {
+.container .header__content .content__info .content__wrapper {
   padding-top: 69px;
 }
 
-header .container .header__content .content__info .content__wrapper .content__desc {
+.container .header__content .content__info .content__wrapper .content__desc {
   margin-right: 30.15px;
   color: white;
   border: 0;
@@ -101,7 +98,7 @@ header .container .header__content .content__info .content__wrapper .content__de
   width: 189px;
 }
 
-header .container .header__content .content__info .content__wrapper .content__more {
+.container .header__content .content__info .content__wrapper .content__more {
   border: 0;
   border: 2px solid #091133;
   -webkit-box-sizing: border-box;
@@ -133,13 +130,13 @@ header .container .header__content .content__info .content__wrapper .content__mo
   .container {
     width: 540px;
   }
-  header .container .header__nav .logo {
+  .container .header__nav .logo {
     margin-right: 7.5px;
   }
-  header .container .header__nav .header__menu {
+  .container .header__nav .header__menu {
     display: none;
   }
-  header .container .header__nav .buy {
+  .container .header__nav .buy {
     display: none;
   }
   main {
@@ -200,32 +197,40 @@ header .container .header__content .content__info .content__wrapper .content__mo
 }
 
 @media screen and (max-width: 575px) {
-  header .container {
+  html {
+    margin: 0 auto;
+  }
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .container {
     max-width: 100%;
     padding: 0 15px;
   }
-  header .container .header__content .content__info {
+  .container .header__content .content__info {
     text-align: justify;
   }
-  header .container .header__content .content__info .content__wrapper {
+  .container .header__content .content__info .content__wrapper {
     padding-top: 34px;
     width: 100%;
   }
-  header .container .header__content .content__info .content__wrapper .content__desc {
+  .container .header__content .content__info .content__wrapper .content__desc {
     margin-right: 0;
     width: 100%;
   }
-  header .container .header__content .content__info .content__wrapper .content__more {
+  .container .header__content .content__info .content__wrapper .content__more {
     margin-top: 15px;
     width: 100%;
   }
-  header .container .header__nav .show {
+  .container .header__nav .show {
     display: block;
     position: absolute;
     top: 100px;
     left: 22.5px;
   }
-  header .container .header__nav .show .page {
+  .container .header__nav .show .page {
     padding-top: 15px;
     font-size: 30px;
   }

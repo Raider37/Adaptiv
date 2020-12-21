@@ -4,15 +4,22 @@
     font-family: 'Roboto';
     font-style: normal;
     outline: 0;
+
+
 }
 
+
+
+
+
+
 body{
+    max-width: 100%;
     box-sizing: border-box;
 }
 
 
-header{
-    padding-top: 12px;
+
     .container{
         max-width: 1170px;
         margin: 0 auto;
@@ -89,7 +96,7 @@ header{
             }   
         }
     }
-}
+
 
 
 @media screen and (max-width: 1200px) {
@@ -117,15 +124,15 @@ header{
     }
 
 
-    header .container .header__nav .logo {
+    .container .header__nav .logo {
         margin-right: 7.5px;
     }
 
-    header .container .header__nav .header__menu {
+    .container .header__nav .header__menu {
         display: none;
     }
 
-    header .container .header__nav .buy {
+    .container .header__nav .buy {
         display: none;
     }
 
@@ -186,31 +193,39 @@ header{
 
 @media screen and (max-width: 575px) {
 
-	header .container {
+    html{
+        margin: 0 auto;
+    }
+
+    body{
+        display: flex;
+    }
+
+	.container {
         max-width: 100%;
         padding: 0 15px;
     }
 
-    header .container .header__content .content__info {
+    .container .header__content .content__info {
         text-align: justify;
     }
 
-    header .container .header__content .content__info .content__wrapper {
+    .container .header__content .content__info .content__wrapper {
         padding-top: 34px;
         width: 100%;
     }
 
-    header .container .header__content .content__info .content__wrapper .content__desc {
+    .container .header__content .content__info .content__wrapper .content__desc {
         margin-right: 0;
         width: 100%;
     }
 
-    header .container .header__content .content__info .content__wrapper .content__more {
+    .container .header__content .content__info .content__wrapper .content__more {
         margin-top: 15px;
         width: 100%;
     }
 
-    header .container .header__nav .show{
+    .container .header__nav .show{
         display: block;
         position: absolute;
         top: 100px;
